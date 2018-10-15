@@ -5,6 +5,7 @@
     <title>All</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <!-- <script src="./db/weather.json"></script> -->
     <script src="./app.js"></script>
   </head>
   <body>
@@ -23,31 +24,31 @@
         </div>
       </div>
     </nav>
-    <div class = 'col-xs-8'>
+    <div class = 'col-xs-8' style="float: left">
       <div class='row container'>
         <figure class='col-md-4 col-xs-12 image border' style="text-align:center">
-          Tempurature
+          <h3>Tempurature</h3>
           <img onclick="javascript:showData('temp')"  src='./images/tempScatter2.png' width="100%" height="345">
         </figure>
         <figure class='col-md-4 col-xs-12 image' style="text-align:center">
-          Cloudiness
+          <h3>Cloudiness</h3>
           <img onclick="javascript:showData('cloudiness')" src='./images/cloudinessScatter.PNG' width="100%" height="345">
         </figure>
       </div>
       <div class='row container'>
         <figure class='col-md-4 col-xs-12 image' style="text-align:center">
-          Humidity
+          <h3>Humidity</h3>
           <img onclick="javascript:showData('humidity')" src='./images/humidityScatter.PNG' width="100%" height="345">
         </figure>
         <figure class='col-md-4 col-xs-12 image' style="text-align:center">
-          Windiness
+          <h3>Windiness</h3>
           <img onclick="javascript:showData('windiness')" src='./images/windinessScatter.PNG' width="100%" height="345">
         </figure>
       </div>
     </div>
-    <div class='col-xs-4'>
-      <table class='table'>
-      </table>
+    <div class=' col-xs-4' >
+      <table class='table table-responsive striped'><h3>Click an image to see data.</h3></table>
+      
     </div>
   </body>
 </html>
